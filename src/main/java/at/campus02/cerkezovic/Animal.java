@@ -49,5 +49,12 @@ public class Animal {
         return "name: " + name + " age: " + age;
     }
 
+    public String ageCategory(){
+        if (age > 4) return "old animal";
+        else if (age > 2) return "young animal";
+        else if (age > 0) return "baby animal";
+        else return null;
+    }
+
 
 }
